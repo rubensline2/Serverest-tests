@@ -11,7 +11,7 @@ export class Cadastro {
         cy.visit(this.url);
     }
 
-    fillBillingForm(formDataFixture){
+    fillForm(formDataFixture){
         const randomFullName = faker.helpers.fake('{{name.firstName}} {{name.lastName}}')
         this.elements.getUserNome().type(randomFullName);
         
@@ -24,25 +24,5 @@ export class Cadastro {
         });
         cy.contains('Cadastro realizado com sucesso')
     }
-
-
-
-
-
-
-
-
-
-    /*setUsername(username) {
-        this.elements.getUserNome().type(Cypress.env(username) || username);
-    }
-
-    setUsermail(usermail) {
-        this.elements.getUserEmail().type(Cypress.env(useremail) || usermail);
-    }
-
-    getBtnSubmit() {
-        this.elements.getLoginBtn().click();
-    }*/
 }
 export const CadastroPage = new Cadastro();

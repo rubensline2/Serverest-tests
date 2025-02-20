@@ -16,7 +16,7 @@
      ✓ Cadastrar novo usuário - Método POST
 
 ## Clonando e executando em sua máquina
-### Pré-requisito:
+### Pré-requisitos:
 - Visual Studio Code ou qualquer outro editor: https://code.visualstudio.com/download
 - Node.js: https://nodejs.org/en/
 - Git para versionamento: https://git-scm.com/downloads

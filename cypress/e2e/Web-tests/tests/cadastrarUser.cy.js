@@ -6,6 +6,6 @@ describe('Criar uma conta para usuário', { tags: ['@Cadastro'] }, () => {
         CadastroPage.navigate();
     });
     it('Cadastrar Usuário para a aplicação', { tags: ['@CX-T1537', '@regression'] }, () => {
-        CadastroPage.fillBillingForm('billing-details-data');
+        CadastroPage.fillForm('billing-details-data');
     });   
 });
