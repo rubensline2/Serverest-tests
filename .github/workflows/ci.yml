@@ -1,0 +1,26 @@
+name: Cypress CI - API ServeRest
+on: push
+jobs:
+  cypress-run:
+    runs-on: ubuntu-22.04
+    environment: qa
+    steps:
+      - name: Copying the Project
+        uses: actions/checkout@v4
+
+      - name: Running Cypress Tests
+        uses: cypress-io/github-action@v6
+
+      - name: Uploading files in case of failure
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+          if-no-files-found: ignore 
+      - name: Upload files if successful
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-videos
+          path: cypress/videos
+          if-no-files-found: ignore
