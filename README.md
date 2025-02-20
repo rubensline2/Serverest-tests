@@ -1,8 +1,8 @@
 # Cypress - API - Front-end - Serverest
 ## Projeto de testes na API Serverest e frontend
 
-Modelagem da API REST com Swagger: https://serverest.dev/
-Url do frontend para teste: https://front.serverest.dev/
+* Modelagem da API REST com Swagger: https://serverest.dev/
+* Url do frontend para teste: https://front.serverest.dev/
 
 ## Cenários de Testes automatizados
 ### Front-end
@@ -17,9 +17,9 @@ Url do frontend para teste: https://front.serverest.dev/
 
 ## Clonando e executando em sua máquina
 ### Pré-requisito:
--Visual Studio Code ou qualquer outro editor: https://code.visualstudio.com/download
--Node.js: https://nodejs.org/en/
--Git para versionamento: https://git-scm.com/downloads
+- Visual Studio Code ou qualquer outro editor: https://code.visualstudio.com/download
+- Node.js: https://nodejs.org/en/
+- Git para versionamento: https://git-scm.com/downloads
 
 Abrir terminal e rode os comandos:
 ```  
