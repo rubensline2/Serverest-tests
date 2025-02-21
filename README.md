@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 # Serverest-tests
-=======
 # 🚀Cypress - API - Front-end - Serverest🚀
 ## Projeto de testes na API Serverest e frontend
 
@@ -93,4 +91,3 @@ cypress-api-test-serverest/
  - **node_modules:** arquivos ou diretórios que podem ser carregados pelo Node.js;
  - **cypress.json:** arquivo de configuração do Cypress;
  - **package-lock.json:** gerado automaticamente com as instalações e atualizações de pacotes;
->>>>>>> 7d7a61a65b95870ccdd0b00269efd3ef3e2330da
