@@ -2,8 +2,13 @@
 import { faker } from '@faker-js/faker';
 
 Cypress.Commands.add('cadastrarUsuario', () => { 
+<<<<<<< HEAD
     const nomeAleatorio = faker.person.fullName();
     const emailAleatorio = faker.internet.email();
+=======
+    let nomeAleatorio = faker.person.fullName();
+    let emailAleatorio = faker.internet.email();
+>>>>>>> 7d7a61a65b95870ccdd0b00269efd3ef3e2330da
     const boolean = Array.from({ length: 5 }, () => Math.random() < 0.5);
     const adminAleatorio = boolean[Math.floor(Math.random() * boolean.length)].toString();
     cy.api({

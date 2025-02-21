@@ -8,8 +8,13 @@ const passwordAleatorio = faker.internet.password()
 const boolean = Array.from({ length: 5 }, () => Math.random() < 0.5)
 const adminAleatorio = boolean[Math.floor(Math.random() * boolean.length)].toString()
 
+<<<<<<< HEAD
 describe('Cadastro', () => {
     it('POST - Cadastrar usuário com sucesso', () => {
+=======
+describe('Cadastro de usuário', () => {
+    it.only('POST - Cadastrar usuário com sucesso @api', () => {
+>>>>>>> 7d7a61a65b95870ccdd0b00269efd3ef3e2330da
         cy.cadastrarUsuario()
         .then((response) => {
             expect(response.status).to.equal(201)
@@ -17,6 +22,7 @@ describe('Cadastro', () => {
             expect(response.body._id).to.exist;
         })
     });
+<<<<<<< HEAD
 
    /* it('Cadastrar usuário com nome em branco', () => {
 
@@ -89,4 +95,6 @@ describe('Cadastro', () => {
                 expect(response.body.message).to.equal("Este email já está sendo usado")
         })
     })*/
+=======
+>>>>>>> 7d7a61a65b95870ccdd0b00269efd3ef3e2330da
 })
