@@ -27,16 +27,16 @@
 - Abra o diretório do projeto no terminal e execute o comando:
     - `npm install`
 
-Para abrir a interface de execução do Cypress testes API, execute:
+- Para abrir a interface de execução do Cypress testes API, execute:
     - `npm run test:api`
 
-Para abrir a interface de execução do Cypress testes Front-end, execute:
+- Para abrir a interface de execução do Cypress testes Front-end, execute:
     - `npm run test:front`
 
-Para abrir a execução dos testes Front-end modo headless, execute:
+- Para abrir a execução dos testes Front-end modo headless, execute:
     - `npm run headlesss:web`
 
-Para abrir a execução dos testes de API modo headless, execute:
+- Para abrir a execução dos testes de API modo headless, execute:
     - `npm run headlesss:api`
 
 ### ⚙️ Arquitetura do projeto
