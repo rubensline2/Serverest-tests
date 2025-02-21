@@ -11,19 +11,11 @@ export class Cadastro {
         cy.visit(this.url);
     }
 
-<<<<<<< HEAD
-    fillBillingForm(formDataFixture){
+    fillForm(formDataFixture){
         const randomFullName = faker.helpers.fake('{{name.firstName}} {{name.lastName}}')
         this.elements.getUserNome().type(randomFullName);
         
         const randomEmail = faker.internet.email(randomFullName);
-=======
-    fillForm(formDataFixture){
-        let randomFullName = faker.helpers.fake('{{name.firstName}} {{name.lastName}}')
-        this.elements.getUserNome().type(randomFullName);
-        
-        let randomEmail = faker.internet.email(randomFullName);
->>>>>>> 7d7a61a65b95870ccdd0b00269efd3ef3e2330da
         this.elements.getUserEmail().type(randomEmail);
 
         cy.fixture(formDataFixture).then((data) => {
@@ -32,7 +24,6 @@ export class Cadastro {
         });
         cy.contains('Cadastro realizado com sucesso')
     }
-<<<<<<< HEAD
 
 
 
@@ -53,7 +44,5 @@ export class Cadastro {
     getBtnSubmit() {
         this.elements.getLoginBtn().click();
     }*/
-=======
->>>>>>> 7d7a61a65b95870ccdd0b00269efd3ef3e2330da
 }
 export const CadastroPage = new Cadastro();

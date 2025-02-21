@@ -13,7 +13,7 @@ export class Login {
   }
 
   setUsername(username) {
-    this.elements.getUserInput().type(_email);
+    this.elements.getUserInput().type(Cypress.env(username) || username);
   }
 
   setPassword(password) {
