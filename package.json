@@ -8,33 +8,20 @@
   },
   "scripts": {
     "test:api": "npx cypress open --config baseUrl=https://serverest.dev/",
-<<<<<<< HEAD
-    "test:front": "npx cypress open --config baseUrl=https://front.serverest.dev/"
-  },
-
-=======
     "test:front": "npx cypress open --config baseUrl=https://front.serverest.dev/",
     "headlesss:api": "npx cypress run --config baseUrl=https://serverest.dev/ grep=@api",
     "headlesss:web": "npx cypress run  --config baseUrl=https://front.serverest.dev/ grep=@web"
   },
->>>>>>> 7d7a61a65b95870ccdd0b00269efd3ef3e2330da
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-<<<<<<< HEAD
-=======
     "@bahmutov/cy-grep": "^2.0.14",
->>>>>>> 7d7a61a65b95870ccdd0b00269efd3ef3e2330da
     "@faker-js/faker": "^8.4.1",
     "cypress": "^14.0.3"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "cypress-plugin-api": "^2.11.1"
-=======
     "cypress-plugin-api": "^2.11.1",
     "cypress-tags": "^1.2.2"
->>>>>>> 7d7a61a65b95870ccdd0b00269efd3ef3e2330da
   }
 }

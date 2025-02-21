@@ -2,13 +2,8 @@
 import { faker } from '@faker-js/faker';
 
 Cypress.Commands.add('cadastrarUsuario', () => { 
-<<<<<<< HEAD
     const nomeAleatorio = faker.person.fullName();
     const emailAleatorio = faker.internet.email();
-=======
-    let nomeAleatorio = faker.person.fullName();
-    let emailAleatorio = faker.internet.email();
->>>>>>> 7d7a61a65b95870ccdd0b00269efd3ef3e2330da
     const boolean = Array.from({ length: 5 }, () => Math.random() < 0.5);
     const adminAleatorio = boolean[Math.floor(Math.random() * boolean.length)].toString();
     cy.api({
@@ -39,6 +34,8 @@ Cypress.Commands.add('cadastrarUsuarioInvalido', (nome, email, password, adminis
 
 Cypress.Commands.add('buscarTodosUsuarios', () => { 
     let _id
+    let _email
+    let _senha
     cy.api({
         method: 'GET',
         url: `/usuarios/`,
@@ -54,6 +51,8 @@ Cypress.Commands.add('buscarUsuarioPorID', () => {
            url: '/usuarios/' + _id,
            failOnStatusCode: false
         }).then((response) => { return response })
+        _email = response.body.usuarios[0].email
+        _senha = response.body.usuarios[0].senha
     })
 })
 
