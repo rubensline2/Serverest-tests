@@ -12,10 +12,10 @@ export class Cadastro {
     }
 
     fillForm(formDataFixture){
-        const randomFullName = faker.helpers.fake('{{name.firstName}} {{name.lastName}}')
+        let randomFullName = faker.helpers.fake('{{name.firstName}} {{name.lastName}}')
         this.elements.getUserNome().type(randomFullName);
         
-        const randomEmail = faker.internet.email(randomFullName);
+        let randomEmail = faker.internet.email(randomFullName);
         this.elements.getUserEmail().type(randomEmail);
 
         cy.fixture(formDataFixture).then((data) => {

@@ -1,11 +1,11 @@
 /// <reference types="cypress" />
 import { CadastroPage } from "../page-objects/cadastro";
 
-describe('Criar uma conta para usuário', { tags: ['@Cadastro'] }, () => {
+describe('Criar uma conta para usuário', { tags: ['@web'] }, () => {
     beforeEach(() => {
         CadastroPage.navigate();
     });
-    it('Cadastrar Usuário para a aplicação', { tags: ['@CX-T1537', '@regression'] }, () => {
+    it('Cadastrar Usuário para a aplicação', { tags: ['@web'] }, () => {
         CadastroPage.fillForm('billing-details-data');
     });   
 });
